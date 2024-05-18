@@ -1,0 +1,78 @@
+:root {
+    --size-punto: 10px;
+}
+
+body {
+    background-image: url("https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/masters/forest.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top -15px;
+}
+
+.card{
+    background: rgb(228,31,37);
+background: linear-gradient(180deg, rgba(228,31,37,1) 0%, rgba(228,31,37,1) 36%, rgba(43,43,42,1) 36%, rgba(43,43,42,1) 45%, rgba(255,255,255,1) 45%);
+}
+
+.titulo{
+    height: 200px;
+    
+}
+
+.titulo div{
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    font-size: 27px;
+}
+
+.titulo div input{
+    height: 40px;
+    padding: 25px 5px 25px 10px;
+    background-color: #ffd632;
+    border: 4px solid #365FAC;
+    font-weight: 500;
+    width: 325px;
+}
+
+.titulo div input::placeholder{
+    color: #000;
+    font-weight: 500;
+}
+
+.titulo div input:focus{
+    outline: 0;
+
+}
+
+.titulo div button{
+    padding: 0 20px;
+    background-color: #365FAC;
+    border: 4px solid #365FAC;
+}
+
+.titulo img{
+    height: 250px;
+}
+
+.botones-as button{
+    height: 70px;
+    width: 220px;
+    background-color: #E41F25;
+    border: #000 3px solid;
+    color: #fff;
+    font-size: 33px;
+    font-weight: 500;
+}
+
+.botones-as button:hover{
+    color: #E41F25;
+    background-color: #fff;
+    transition: 0.4s all;
+}
+
+.nombre-pokemon{
+    padding-top: 9px;
+    padding-bottom: 30px;
+}
