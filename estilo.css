@@ -12,7 +12,12 @@ body {
 
 .card{
     background: rgb(228,31,37);
-background: linear-gradient(180deg, rgba(228,31,37,1) 0%, rgba(228,31,37,1) 36%, rgba(43,43,42,1) 36%, rgba(43,43,42,1) 45%, rgba(255,255,255,1) 45%);
+    background: linear-gradient(180deg, rgba(228,31,37,1) 0%, rgba(228,31,37,1) 36%, rgba(43,43,42,1) 36%, rgba(43,43,42,1) 45%, rgba(255,255,255,1) 45%);
+    transform: scale(0.9);
+}
+
+.cartamargin{
+    margin-top: -20px !important;
 }
 
 .titulo{
@@ -24,16 +29,16 @@ background: linear-gradient(180deg, rgba(228,31,37,1) 0%, rgba(228,31,37,1) 36%,
     position: absolute;
     right: 0;
     margin-right: 30px;
-    font-size: 27px;
+    font-size: 17px;
 }
 
 .titulo div input{
-    height: 40px;
-    padding: 25px 5px 25px 10px;
+    height: 60px;
+    padding: 0 5px 0 7px;
     background-color: #ffd632;
     border: 4px solid #365FAC;
     font-weight: 500;
-    width: 325px;
+    width: 210px;
 }
 
 .titulo div input::placeholder{
@@ -47,13 +52,18 @@ background: linear-gradient(180deg, rgba(228,31,37,1) 0%, rgba(228,31,37,1) 36%,
 }
 
 .titulo div button{
-    padding: 0 20px;
+    padding: 0 13px 0 8px;
     background-color: #365FAC;
     border: 4px solid #365FAC;
+    font-size: 20px;
 }
 
 .titulo img{
-    height: 250px;
+    height: 200px;
+}
+
+.titulo img:hover{
+    cursor: pointer;
 }
 
 .botones-as button{

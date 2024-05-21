@@ -5,6 +5,8 @@ let divGrillaPagina = document.querySelector('#grilla-personajes')
 let nombreBuscador = document.querySelector("#nombreBuscador")
 let botonBuscador = document.querySelector("#botonBuscador")
 
+let imagenPokedex = document.querySelector("#inicioPokedex")
+
 let contenedorBotones = document.querySelector("#contenedorBotones")
 let botonPresionarAnterior = document.querySelector("#btnAnterior")
 let botonPresionarSiguiente = document.querySelector("#btnSiguiente")
@@ -52,6 +54,7 @@ async function mostrarApi(url_pokeApi= 'https://pokeapi.co/api/v2/pokemon'){
         contenedorBotones.classList.remove('justify-content-start');
         contenedorBotones.classList.add('justify-content-end');
         botonPresionarAnterior.setAttribute("class", "d-none")
+        botonPresionarSiguiente.setAttribute("class", "d-block")
 
     }
 
@@ -89,8 +92,8 @@ async function mostrarApi(url_pokeApi= 'https://pokeapi.co/api/v2/pokemon'){
             }
         })
         divGrillaPagina.innerHTML += `
-                            <div class="col">
-                            <div class="card">
+                            <div class="col cartamargin">
+                            <div class="card cartamargin">
                             <div id="carruselPokemo_${personaje.id}" class="carousel slide">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -171,8 +174,8 @@ botonBuscador.addEventListener("click",async ()=>{
             }
         })
         divGrillaPagina.innerHTML += `
-                            <div class="col">
-                            <div class="card">
+                            <div class="col mt-0 cartamargin">
+                            <div class="card cartamargin">
                             <div id="carruselPokemo_${personaje.id}" class="carousel slide">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -216,7 +219,9 @@ botonBuscador.addEventListener("click",async ()=>{
                             `
 })
 
-
+imagenPokedex.addEventListener("click", ()=>{
+    location.reload()
+})
 
 
 
